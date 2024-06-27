@@ -1,5 +1,5 @@
 # Pixel-point-processing-Webpage
-A webpage using HTML, CSS and JavaScript, showing the different pixel-point-processing techniques such as Increase Brightness. Decrease Brightness. Increasing Contrast. Decrease Contrast. Inverse (Negative of the Image).
+A webpage using HTML, CSS and JavaScript, showing the different pixel-point-processing techniques such as Increase Brightness. Decrease Brightness. Increasing Contrast. Decrease Contrast. Inverse (Negative of the Image). This supports only JPEG and PNG image formats.
 
 # Requirements
 Implement decreasing brightness, increasing contrast, decreasing contrast and inverse functions (negative of an image) that will be applied on a grayscale image. 
@@ -43,4 +43,8 @@ Doesn’t need an input field and should apply the inverse of the image as shown
 
 
 
+# Layout
+## Entering the Page:
+![Outline](https://github.com/Khaledayman9/Pixel-point-processing-Webpage/assets/105018459/d37c9a91-e8c8-4d76-8629-d125d53465e0)
 
+## Uploading an Image to increase Brightness
