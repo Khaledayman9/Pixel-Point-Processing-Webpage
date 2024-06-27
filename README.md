@@ -1,5 +1,5 @@
 # Pixel-point-processing-Webpage
-A webpage using HTML, CSS and JavaScript, showing the different pixel-point-processing techniques such as Increase Brightness. Decrease Brightness. Increasing Contrast. Decrease Contrast. Inverse (Negative of the Image). This supports only JPEG and PNG image formats.
+A webpage using HTML, CSS and JavaScript, showing the different pixel-point-processing techniques such as Increase Brightness. Decrease Brightness. Increasing Contrast. Decrease Contrast. Inverse (Negative of the Image). This supports only JPG and PNG image formats.
 
 # Requirements
 Implement decreasing brightness, increasing contrast, decreasing contrast and inverse functions (negative of an image) that will be applied on a grayscale image. 
@@ -39,12 +39,37 @@ Needs the following fields so that you can decrease the contrast of the image ac
 ## Inverse (Negative of the Image):
 Doesn’t need an input field and should apply the inverse of the image as shown in the below graph.
 
-![4](https://github.com/Khaledayman9/Pixel-point-processing-HTML-Page/assets/105018459/face5834-fb68-480b-85bf-12555d47b73f)
 
 
 
 # Layout
 ## Entering the Page:
-![Outline](https://github.com/Khaledayman9/Pixel-point-processing-Webpage/assets/105018459/d37c9a91-e8c8-4d76-8629-d125d53465e0)
+![Outline](https://github.com/Khaledayman9/Pixel-point-processing-Webpage/assets/105018459/7dd6b00c-333f-454b-a4b2-5bb2b3bd1688)
 
-## Uploading an Image to increase Brightness
+
+## Uploading an Image:
+![After uploading](https://github.com/Khaledayman9/Pixel-point-processing-Webpage/assets/105018459/828d728f-4716-4e6f-a780-25037bce2ad9)
+
+## Choosing "Increase Brightness" with a value of 200:
+![Brightness 1](https://github.com/Khaledayman9/Pixel-point-processing-Webpage/assets/105018459/74626d1a-d607-47ce-8fcd-b0d384de139f)
+
+## Applying "Increase Brightness" with a value of 200:
+![Brightness 2](https://github.com/Khaledayman9/Pixel-point-processing-Webpage/assets/105018459/f1de685a-129e-49cc-959f-5787000b3b45)
+
+## Choosing "Decrease Contrast" with value of 50, 100, 80 and 15:
+![Contrast 1](https://github.com/Khaledayman9/Pixel-point-processing-Webpage/assets/105018459/2727bb6e-e342-4e5a-bb79-63f52d44f5f3)
+
+## Applying "Decrease Contrast" with value of 50, 100, 80 and 15:
+![Contrast 2](https://github.com/Khaledayman9/Pixel-point-processing-Webpage/assets/105018459/865a185c-74f4-4533-8762-6c3a018fd862)
+
+## Choosing and Applying "Inverse":
+![Inverse](https://github.com/Khaledayman9/Pixel-point-processing-Webpage/assets/105018459/586cc9da-2156-45fc-89a1-27aaff0af146)
+
+
+# Technologies
+- HTML
+- JavaScript
+- CSS
+- Visual Studio Code
+
+
