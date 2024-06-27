@@ -5,6 +5,11 @@ A webpage using HTML, CSS and JavaScript, showing the different pixel-point-proc
 Implement decreasing brightness, increasing contrast, decreasing contrast and inverse functions (negative of an image) that will be applied on a grayscale image. 
 
 # Techniques
+## Increase Brightness:
+Needs the field of “Increase Brightness Value” so that you can decrease the brightness of the image according to the given value as shown in the below graph.
+
+![w](https://github.com/Khaledayman9/Pixel-point-processing-Webpage/assets/105018459/db87dec2-5be8-4f91-a1de-4e68e5fcd4d2)
+
 ## Decrease Brightness:
 Needs the field of “Decrease Brightness Value” so that you can decrease the brightness of the image according to the given value as shown in the below graph.
 
