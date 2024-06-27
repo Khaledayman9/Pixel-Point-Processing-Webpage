@@ -1,0 +1,243 @@
+<!-- <!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Introduction to Media Project</title>
+    <script src="app.js"> </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <div>
+        <p0>
+      <p>
+        <p1> Name : Yousef Mohamed Hassan </p1>
+      <p2> ID: 49-0560 </p2>
+        <p3> Tutorial: T-11 </p3></p> </p0>
+        <p0> <p> 
+        <p1> Name: Khaled Ayman Anwar
+        </p1>
+        <p2> ID: 49-3005 </p2>
+          <p3> Tutorial: T-11 </p3></p></p0>
+    </div>
+    <div>
+    <div>
+        <p><b>Upload a grayscale image </b></p>
+        <input id="uploadImage" name="photo" type="file" accept="image/jpg,image/png" onchange="displayOriginalImage(this)" >
+    </div>
+
+    <div class="row" id="originalImage" style="display: none;">
+        <div class="column">
+            <p> The grayscale image you want to apply transformation on :</p>
+            <img src="" id="inputImage">
+        </div>
+        <div class="column" id="result" style="display: none;">
+            <p>Transformed Image :</p>
+            <canvas id="resultImage"></canvas>
+        </div>
+
+    </div><br>
+
+    <form id="transformation" style="display: none;">
+        <b> Select the required image transformation </b>
+        <select id="myList" onchange="showTransformForm()">
+            <option disabled selected> ---Choose transformation--- </option>
+            <option> Increase Brightness </option>
+            <option> Decrease Brightness </option>
+            <option> Increase Contrast </option>
+            <option> Decrease Contrast </option>
+            <option> Inverse </option>
+        </select>
+        <p> Your selected transformation is:
+            <input type="text" id="transformType" size="20">
+    </form>
+
+    <div id="increaseBrightnessInputs" style="display: none;">
+        <form id="increaseBrightnessForm" class="form">
+            <label>Increase Brightness Value: </label>
+            <input type="number" id="ib1" placeholder="0" min="0" max="255"><br><br>
+            <input type="submit" value="Apply">
+        </form>
+
+        <p>Click on the Apply button to submit the value.</p>
+    </div>
+
+    <div id="decreaseBrightnessInputs" style="display: none;">
+        <form id="decreaseBrightnessForm" class="form">
+            <label>Decrease Brightness Value: </label>
+            <input type="number" id="ib2" placeholder="0" min="0" max="255"><br><br>
+            <input type="submit" value="Apply">
+        </form>
+        <p>Click on the Apply button to submit the value.</p>
+    </div>
+
+    <div id="increaseContrastInputs" style="display: none;">
+        <form id="increaseContrastForm" class="form">
+            <label>Original Brightest Dark: </label>
+            <input type="number" id="Obdf1" placeholder="0" min="0" max="255"><br><br>
+            <label>Original Darkest Bright: </label>
+            <input type="number" id="Odbf1" placeholder="0" min="0" max="255"><br><br>
+            <label>Transformed Brightest Dark: </label>
+            <input type="number" id="Tbdf1" placeholder="0" min="0" max="255"><br><br>
+            <label>Transformed Darkest Bright: </label>
+            <input type="number" id="Tdbf1" placeholder="0" min="0" max="255"><br><br>
+            <input type="submit" value="Apply">
+        </form>
+        <p>Click on the Apply button to submit the values.</p>
+    </div>
+
+    <div id="decreaseContrastInputs" style="display: none;">
+        <form id="decreaseContrastForm" class="form">
+            <label>Original Brightest Dark: </label>
+            <input type="number" id="Obdf2" placeholder="0" min="0" max="255"><br><br>
+            <label>Original Darkest Bright: </label>
+            <input type="number" id="Odbf2" placeholder="0" min="0" max="255"><br><br>
+            <label>Transformed Brightest Dark: </label>
+            <input type="number" id="Tbdf2" placeholder="0" min="0" max="255"><br><br>
+            <label>Transformed Darkest Bright: </label>
+            <input type="number" id="Tdbf2" placeholder="0" min="0" max="255"><br><br>
+            <input type="submit" value="Apply">
+        </form>
+        <p>Click on the Apply button to submit the values.</p>
+    </div>
+
+    <div id="inverseInputs" style="display: none;">
+        <form id="inverseForm" class="form">
+            <input type="submit" value="Apply">
+        </form>
+        <p>Click on the Apply button to submit the inverse.</p>
+    </div>
+
+</body>
+
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Project</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Media Project</h1>
+    </header>
+
+    <main class="container">
+        <section class="team-section">
+            <h2>Description</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3> A webpage using HTML, CSS and JavaScript, showing the different pixel-point-processing techniques such as:
+                        <ol>
+                            <li>Increase Brightness.</li>
+                            <li>Decrease Brightness.</li>
+                            <li>Increasing Contrast.</li>
+                            <li>Decrease Contrast.</li>
+                            <li>Inverse (Negative of the Image).</li>
+                        </ol>
+                    </h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="upload-section">
+            <h2>Image Upload</h2>
+            <label for="uploadImage"><strong>Upload a grayscale image</strong></label>
+            <input id="uploadImage" name="photo" type="file" accept="image/jpg,image/png" onchange="displayOriginalImage(this)">
+
+            <div id="originalImage" class="image-preview" style="display: none;">
+                <h3>The grayscale image you want to apply transformation on:</h3>
+                <img src="" id="inputImage">
+            </div>
+
+            <div id="result" class="image-preview" style="display: none;">
+                <h3>Transformed Image:</h3>
+                <canvas id="resultImage"></canvas>
+            </div>
+        </section>
+
+        <section id="transformation" class="transformation-section" style="display: none;">
+            <h2>Select the required image transformation</h2>
+            <label for="myList">Transformation:</label>
+            <select id="myList" onchange="showTransformForm()">
+                <option disabled selected>--- Choose transformation ---</option>
+                <option>Increase Brightness</option>
+                <option>Decrease Brightness</option>
+                <option>Increase Contrast</option>
+                <option>Decrease Contrast</option>
+                <option>Inverse</option>
+            </select>
+            <p>Your selected transformation is:</p>
+            <input type="text" id="transformType" size="20" readonly>
+        </section>
+
+        <section id="increaseBrightnessInputs" class="form-section" style="display: none;">
+            <h3>Increase Brightness</h3>
+            <form id="increaseBrightnessForm" class="form">
+                <label for="ib1">Increase Brightness Value:</label>
+                <input type="number" id="ib1" placeholder="0" min="0" max="255">
+                <button type="submit">Apply</button>
+            </form>
+        </section>
+
+        <section id="decreaseBrightnessInputs" class="form-section" style="display: none;">
+            <h3>Decrease Brightness</h3>
+            <form id="decreaseBrightnessForm" class="form">
+                <label for="ib2">Decrease Brightness Value:</label>
+                <input type="number" id="ib2" placeholder="0" min="0" max="255">
+                <button type="submit">Apply</button>
+            </form>
+        </section>
+
+        <section id="increaseContrastInputs" class="form-section" style="display: none;">
+            <h3>Increase Contrast</h3>
+            <form id="increaseContrastForm" class="form">
+                <label for="Obdf1">Original Brightest Dark:</label>
+                <input type="number" id="Obdf1" placeholder="0" min="0" max="255">
+                <label for="Odbf1">Original Darkest Bright:</label>
+                <input type="number" id="Odbf1" placeholder="0" min="0" max="255">
+                <label for="Tbdf1">Transformed Brightest Dark:</label>
+                <input type="number" id="Tbdf1" placeholder="0" min="0" max="255">
+                <label for="Tdbf1">Transformed Darkest Bright:</label>
+                <input type="number" id="Tdbf1" placeholder="0" min="0" max="255">
+                <button type="submit">Apply</button>
+            </form>
+        </section>
+
+        <section id="decreaseContrastInputs" class="form-section" style="display: none;">
+            <h3>Decrease Contrast</h3>
+            <form id="decreaseContrastForm" class="form">
+                <label for="Obdf2">Original Brightest Dark:</label>
+                <input type="number" id="Obdf2" placeholder="0" min="0" max="255">
+                <label for="Odbf2">Original Darkest Bright:</label>
+                <input type="number" id="Odbf2" placeholder="0" min="0" max="255">
+                <label for="Tbdf2">Transformed Brightest Dark:</label>
+                <input type="number" id="Tbdf2" placeholder="0" min="0" max="255">
+                <label for="Tdbf2">Transformed Darkest Bright:</label>
+                <input type="number" id="Tdbf2" placeholder="0" min="0" max="255">
+                <button type="submit">Apply</button>
+            </form>
+        </section>
+
+        <section id="inverseInputs" class="form-section" style="display: none;">
+            <h3>Inverse</h3>
+            <form id="inverseForm" class="form">
+                <button type="submit">Apply</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

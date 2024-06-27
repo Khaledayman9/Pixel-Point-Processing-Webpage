@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.upload-section,
+.transformation-section,
+.form-section {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+input[type="file"],
+input[type="number"],
+select,
+button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.image-preview {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.image-preview img,
+.image-preview canvas {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+p0 {
+    text-align: center;
+}
+
+p1 {
+    color: blue;
+    font-weight: bold;
+}
+
+p2 {
+    color: red;
+}
+
+p3 {
+    color: green;
+}
+
+
+/* Ordered List Styles */
+
+ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+    list-style: decimal inside;
+}
+
+ol li {
+    margin-bottom: 0.5rem;
+}
